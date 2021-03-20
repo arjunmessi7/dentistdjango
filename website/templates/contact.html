@@ -46,16 +46,11 @@ Author URL: http://w3layouts.com
 					<h6 class="sub-title">Contact Us</h6>
 					<h3 class="hny-title">Drop your message for any info <br>or question.</h3>
 				</div>
-				{% if name %}
-				<center>
-					<h2>Thanks {{name}}!</h2>
-					<p>We received your email and will respond shortly...</p>
-				</center>
-				{%else%}
+				
 				<div class="row align-form-map">
 					<div class="col-lg-6 form-inner-cont">
 						<form action="" method="post" class="signin-form">
-						{% csrf_token %}
+						
 							<div class="form-input">
 								<label for="w3lName">Name*</label>
 								<input type="text" name="w3lName" id="w3lName" placeholder="" />
